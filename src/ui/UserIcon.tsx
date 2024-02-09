@@ -11,6 +11,7 @@ export const UserIcon = ({
     width="20px"
     height="20px"
     fill="none"
+    data-testid="user-icon"
     {...restProps}
   >
     <path

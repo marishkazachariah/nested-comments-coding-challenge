@@ -2,6 +2,10 @@
 
 Thanks a lot for taking the time for this challenge and for applying at Skoove. Your assignment consists of writing the code for a mockup design in Figma, representing a system of nested comments with replies. This coding challenge is designed to evaluate your frontend engineering skills, focusing on technical proficiency and system design.
 
+### Demo 
+
+![GitHub Image](/public/skoove-code-demo.gif)
+
 ### User Story
 As a Skoove user, I want to engage with a community platform that allows me to easily read, post, and interact with comments in a structured and user-friendly way.
 

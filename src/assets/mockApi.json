@@ -1,1 +1,42 @@
-{}
+{
+    "comments": [
+        {
+            "commentId": 1,
+            "userId": "user_1",
+            "timestamp": "1 y",
+            "commentText": "Though it seems the drag feature could be improved. But overall it looks good I think. I have adjusted the design and the responsiveness at various breakpoints works really well.",
+            "replies": [
+                {
+                    "commentId": 2,
+                    "userId": "someone",
+                    "timestamp": "1 mo",
+                    "commentText": "Woah, your project looks awesome! How long have you been coding for? I’m still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!",
+                    "replies": [
+                        {
+                            "commentId": 3,
+                            "userId": "aperson_89",
+                            "timestamp": "1 d",
+                            "commentText": "If you’re still new, I’d recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It’s very tempting to jump ahead but lay a solid foundation first.",
+                            "replies": [
+                                {
+                                    "commentId": 4,
+                                    "userId": "onemore_83",
+                                    "timestamp": "1 d",
+                                    "commentText": "You could also check this website: codingisfun.com. They have a great blog with tons of resources!",
+                                    "replies": []
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "commentId": 5,
+            "userId": "anotherguy",
+            "timestamp": "1 d",
+            "commentText": "I couldn’t agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.",
+            "replies": []
+        }
+    ]
+}
