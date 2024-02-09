@@ -1,6 +1,6 @@
 export enum TextType {
-    User = "User",
-    MentionUser = "MentionUser",
-    Time = "Time",
-    Default = "Default"
+  User = 'User',
+  MentionUser = 'MentionUser',
+  Time = 'Time',
+  Default = 'Default',
 }

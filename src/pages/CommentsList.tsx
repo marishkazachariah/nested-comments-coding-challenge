@@ -1,20 +1,20 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import CommentsContext from '../components/CommentCard/context/CommentsContextType';
 import { CommentCard } from '../components/CommentCard';
+import CommentsContext from '../components/CommentCard/context/CommentsContextType';
 import { CommentSubmissionForm } from '../components/CommentSubmissionForm';
 
 export const ComponentsList = () => {
   const { t } = useTranslation();
   const context = useContext(CommentsContext);
+  const [newComment, setNewComment] = useState('');
+  const [replyUserId, setReplyUserId] = useState('');
 
   if (!context) {
     return <div>{t('noContextProvided')}</div>;
   }
 
   const { comments, addComment } = context;
-  const [newComment, setNewComment] = useState('');
-  const [replyUserId, setReplyUserId] = useState('');
 
   const handleNewCommentChange = (event: {
     target: {
@@ -32,7 +32,7 @@ export const ComponentsList = () => {
         commentText: newComment,
         timestamp: 'today',
         replies: [],
-        commentId: Math.floor(Math.random() * 1000)
+        commentId: Math.floor(Math.random() * 1000),
       });
       setNewComment('');
       setReplyUserId('');
@@ -54,7 +54,8 @@ export const ComponentsList = () => {
           <CommentCard
             key={comment.commentId}
             comment={comment}
-            onReply={handleReply} />
+            onReply={handleReply}
+          />
         ))}
       </ul>
       <CommentSubmissionForm

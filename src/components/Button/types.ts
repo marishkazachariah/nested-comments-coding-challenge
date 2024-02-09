@@ -1,5 +1,5 @@
 export enum ButtonType {
-    Primary = "Primary",
-    Secondary = "Secondary",
-    Tertiary = "Tertiary",
+  Primary = 'Primary',
+  Secondary = 'Secondary',
+  Tertiary = 'Tertiary',
 }

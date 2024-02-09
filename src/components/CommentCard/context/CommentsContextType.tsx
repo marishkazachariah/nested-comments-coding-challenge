@@ -6,6 +6,8 @@ interface CommentsContextType {
   addComment: (comment: Comment) => void;
 }
 
-const CommentsContext = React.createContext<CommentsContextType | undefined>(undefined);
+const CommentsContext = React.createContext<CommentsContextType | undefined>(
+  undefined,
+);
 
 export default CommentsContext;

@@ -6,19 +6,22 @@ import {
   Route,
   RouterProvider,
 } from 'react-router-dom';
-import { ComponentsList } from './pages/CommentsList';
 import { CommentsProvider } from './components/CommentCard/providers/CommentsProvider';
+import { ComponentsList } from './pages/CommentsList';
 
 export function App() {
   return (
     <RouterProvider
       router={createBrowserRouter(
         createRoutesFromElements(
-          <Route path="/" element={
-            <CommentsProvider>
-              <ComponentsList />
-            </CommentsProvider>
-          } />,
+          <Route
+            path="/"
+            element={
+              <CommentsProvider>
+                <ComponentsList />
+              </CommentsProvider>
+            }
+          />,
         ),
       )}
     />
